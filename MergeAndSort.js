@@ -2,15 +2,15 @@
 
 
 const arrayOne = [1, 4, 6];
-const arrayTwo = [2, 5, 3];
+const arrayTwo = [2, 5, 3, 8];
 
 function mergeArrays(arrayOne,arrayTwo){
     let mergeArray =[];
-    for(let index=0; index<arrayOne.length;index++){
-        mergeArray.push(arrayOne[index])
-        mergeArray.push(arrayTwo[index])
+    //for(let index=0; index<arrayOne.length;index++){
+        mergeArray = [...arrayOne, ...arrayTwo];
+        // mergeArray.push(arrayTwo[index])
 
-    }
+    //}
     return mergeArray;
 }
 

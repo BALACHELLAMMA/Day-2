@@ -9,16 +9,16 @@ function replaceNumberBySpecifiedCharacter(string,replacingCharacter){
     let numbersString ='0123456789';
     let typeArray = ['number','boolean','undefined','object']
 
-    if(string.length===0 || replacingCharacter.length===0) return 'Empty String or replacing character not accepted'
+    //if(string.length===0 || replacingCharacter.length===0) return 'Empty String or replacing character not accepted'
 
-    if(typeArray.includes(typeof replacingCharacter) && typeArray.includes(typeof string))
+    if(typeArray.includes(typeof replacingCharacter) || typeArray.includes(typeof string))
     {
         return 'Enter Valid string or replacing character';  
     }
 
-    for(let index=0;index<string.length;index++){
+    for (let index=0; index<string.length; index++){
         let currentCharacter  = string.charAt(index);
-        if(numbersString.includes(currentCharacter))
+        if (numbersString.includes(currentCharacter))
             result+=replacingCharacter;
         else
             result+=currentCharacter;
@@ -27,7 +27,7 @@ function replaceNumberBySpecifiedCharacter(string,replacingCharacter){
 }
 
 let string = "arun@123"
-let replacingCharacter = 'd'
+let replacingCharacter = null
 
 
 // console.log(replaceNumberBySpecifiedCharacter(string,replacingCharacter))

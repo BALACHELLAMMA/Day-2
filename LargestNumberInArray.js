@@ -31,9 +31,9 @@ function findLargestElementInArray(array,largestPosition){
     return sortedArray[largestElementIndex];
 }
 
-let array = [3, 4, 5, 6, 88];
+let array = [3, 4, 45, 6, 88];
 // console.log("Array: ",array)
-// console.log(sortArray(array))
+console.log(sortArray(array))
 
 console.log(findLargestElementInArray(array, 2));
 // console.log(findLargestElementInArray(array, -1));//negative value -> X
