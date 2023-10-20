@@ -15,6 +15,7 @@ function replaceNumberBySpecifiedCharacter(string,replacingCharacter){
     {
         return 'Enter Valid string or replacing character';  
     }
+
     for(let index=0;index<string.length;index++){
         let currentCharacter  = string.charAt(index);
         if(numbersString.includes(currentCharacter))

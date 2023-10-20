@@ -4,7 +4,9 @@
 
 function sumOfCommaLimitedString(string){
    let sum=0;
+   //split by ',' 
    let array = string.split(',');
+   //string into number
    for(let index=0; index<array.length;index++) sum+=Number(array[index]);
    return sum;
 }

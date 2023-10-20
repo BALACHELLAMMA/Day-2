@@ -1,9 +1,6 @@
 // add "@" at the end of the character 'c'
 
 let string = "cat in the bag";
-
-//"ccc 123 true ascii";// //"ccc 123 true ascii"
-
 let specialCharacter = '@';
 
 function addSpecialCharAtEndOfC(string){
@@ -11,7 +8,7 @@ function addSpecialCharAtEndOfC(string){
 
     for(let index=0;index<string.length;index++){
         let currentCharacter = string.charAt(index);
-        let nextToCurrentCharacter = string.charAt(index+1);
+        // let nextToCurrentCharacter = string.charAt(index+1);
         if((currentCharacter==='c' || currentCharacter==='C')){
             resultString+=currentCharacter+specialCharacter;
             index++;
